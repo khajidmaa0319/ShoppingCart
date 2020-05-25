@@ -1,0 +1,22 @@
+<div class="card order">
+
+    <div class="card-header">
+      <strong>Order</strong>
+    </div>
+  
+    <div class="card-body">
+      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+        <div class="form-group">
+          <label for="from">Name</label>
+          <input type="text" id="name" class="form-control" formControlName="name">
+        </div>
+  
+        <div class="form-group">
+          <label for="to">Address</label>
+          <input type="text" id="address" class="form-control" formControlName="address">
+        </div>
+  
+        <button class="btn btn-primary btn-block btn-sm" >Purchase</button>
+      </form>
+    </div>
+  </div>
